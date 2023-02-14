@@ -1,3 +1,29 @@
+
+<?php
+ // SMTP Server
+ require("./packages/PHPMailer/autoload.php");
+
+ use PHPMailer\PHPMailer\PHPMailer;
+ use PHPMailer\PHPMailer\Exception;
+
+ $mail = new PHPMailer(true);
+
+ $mail->isSMTP();
+ $mail->Host = "mail.zxcs.nl";
+ $mail->SMTPAuth = true;
+ $mail->Username = "aletta@pascalservices.nl";
+ $mail->Password = "u7ytgDsS";
+ $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+ $mail->Port = 587;
+ $mail->From = "pascalwiersma2005@gmail.com";
+ $mail->FromName = "Aletta";
+ $mail->SMTPDebug = "DEBUG_SERVER";
+
+ 
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
