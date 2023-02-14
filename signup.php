@@ -1,31 +1,9 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<?php
- // SMTP Server
- require("./packages/PHPMailer/autoload.php");
-
- use PHPMailer\PHPMailer\PHPMailer;
- use PHPMailer\PHPMailer\Exception;
-
- $mail = new PHPMailer(true);
-
- $mail->isSMTP();
- $mail->Host = "mail.zxcs.nl";
- $mail->SMTPAuth = true;
- $mail->Username = "aletta@pascalservices.nl";
- $mail->Password = "u7ytgDsS";
- $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
- $mail->Port = 587;
- $mail->From = "pascalwiersma2005@gmail.com";
- $mail->FromName = "Aletta";
- $mail->SMTPDebug = "DEBUG_SERVER";
-
- 
-?>
-
-
+<?php require('./php/aanmelding.php'); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -47,6 +25,7 @@
     <main>
         <div class="flex justify-center items-center">
             <div class="container mx-auto my-4 px-4 lg:px-20">
+                <form method="POST">
                 <div
                     class="bg-primarycolor w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                     <div class="flex">
@@ -74,48 +53,48 @@
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="text" name="name-1" placeholder="Naam*" />
+                                type="text" name="name_1" placeholder="Naam*" />
                         </div>
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="email" name="email-1" placeholder="Email*" />
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 mb-2">
-                        <div class="col">
-                            <input
-                                class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="text" name="naam-2" placeholder="Naam*" />
-                        </div>
-                        <div class="col">
-                            <input
-                                class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="email" name="email-2" placeholder="Email*" />
+                                type="email" name="email_1" placeholder="Email*" />
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mb-2">
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="text" name="naam-3" placeholder="Naam*" />
+                                type="text" name="name_2" placeholder="Naam*" />
                         </div>
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="email" name="email-3" placeholder="Email*" />
+                                type="email" name="email_2" placeholder="Email*" />
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mb-2">
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="text" name="naam-4" placeholder="Naam*" />
+                                type="text" name="name_3" placeholder="Naam*" />
                         </div>
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="email" name="email-4" placeholder="Email*" />
+                                type="email" name="email_3" placeholder="Email*" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-2">
+                        <div class="col">
+                            <input
+                                class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                                type="text" name="name_4" placeholder="Naam*" />
+                        </div>
+                        <div class="col">
+                            <input
+                                class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                                type="email" name="email_4" placeholder="Email*" />
                         </div>
                     </div>
                     <div class="my-4">
@@ -123,12 +102,14 @@
                             class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
                     </div>
                     <div class="my-2 w-1/2 lg:w-1/4">
-                        <button class="uppercase text-sm font-bold tracking-wide text-gray-100 p-3 rounded-lg w-full 
+                        <button type="submit" name="aanmelden" class="uppercase text-sm font-bold tracking-wide text-gray-100 p-3 rounded-lg w-full 
                               focus:outline-none focus:shadow-outline bg-secondarycolor">
                             Aanmelden
                         </button>
                     </div>
                 </div>
+            </form>
+
                 <div class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-secondarycolor rounded-2xl">
                     <div class="flex flex-col text-white">
                         <h1 class="font-bold uppercase text-4xl my-4">Vul hier in!</h1>
