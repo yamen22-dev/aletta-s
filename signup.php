@@ -1,3 +1,10 @@
+<?php
+// Mail verstuur systeem
+if (isset($_POST['aanmelden'])) {
+    require("./php/aanmelding.php");
+    sendMail($_POST);
+}
+?>
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -15,19 +22,8 @@
 
 <body>
     <?php
-    // Mail verstuur systeem
-    if (isset($_POST['aanmelden'])) {
-        require("./php/aanmelding.php");
-        sendMail($_POST);
-    }
+    require("components/header.php");
     ?>
-    <header>
-        <div>
-            <a href="index.php" class="flex justify-center mt-4">
-                <img class="h-28 mr-19" src="img/aletta-blue-logo.png" alt="Logo">
-            </a>
-        </div>
-    </header>
     <main>
         <div class="flex justify-center items-center">
             <div class="container mx-auto my-4 px-4 lg:px-20">

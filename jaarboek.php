@@ -49,133 +49,96 @@
       </div>
    </div>
    <!-- Modals -->
-   <div id="modal-1" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden">
-      <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-         <div class="bg-white rounded-lg shadow-lg w-60 md:w-3/4 lg:w-2/3 h-60 md:h-3/4 lg:h-2/3 p-6 relative">
+   <div id="modal-1" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
             <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-            <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-               Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-               Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-               Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-               Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-            </p>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
             <button id="sluit-modal-1" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-         </div>
+         </div>  
       </div>
    </div>
-   
    <div id="modal-2" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
       <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
          <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-            <h2 class="text-2xl md:text-4xl lg:text-5xl font-semibold mb-10">Titel van het project</h2>
-            <p class=" text-sm md:text-base lg:text-lg mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-               Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-               Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-               Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-               Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-            </p>
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
             <button id="sluit-modal-2" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
          </div>  
       </div>
    </div>
-    <div id="modal-3" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden">
-         <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-            <div class="bg-white rounded-lg shadow-lg w-60 md:w-3/4 lg:w-2/3 h-60 md:h-3/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-                  Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-                  Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-                  Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-                  Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-               </p>
-               <button id="sluit-modal-3" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>
-         </div>
+   <div id="modal-3" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-3" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
       </div>
-   <div id="modal-4" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden">
-         <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-            <div class="bg-white rounded-lg shadow-lg w-60 md:w-3/4 lg:w-2/3 h-60 md:h-3/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-                  Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-                  Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-                  Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-                  Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-               </p>
-               <button id="sluit-modal-4" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>
-         </div>
+   </div>
+   <div id="modal-4" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-4" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
       </div>
-   <div id="modal-5" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden">
-         <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-            <div class="bg-white rounded-lg shadow-lg w-60 md:w-3/4 lg:w-2/3 h-60 md:h-3/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-                  Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-                  Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-                  Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-                  Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-               </p>
-               <button id="sluit-modal-5" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>
-         </div>
+   </div>
+   <div id="modal-5" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-5" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
       </div>
-   <div id="modal-6" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden">
-         <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-            <div class="bg-white rounded-lg shadow-lg w-60 md:w-3/4 lg:w-2/3 h-60 md:h-3/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-                  Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-                  Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-                  Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-                  Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-               </p>
-               <button id="sluit-modal-6" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>
-         </div>
+   </div>
+   <div id="modal-6" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-6" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
       </div>
-   <div id="modal-7" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden">
-         <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-            <div class="bg-white rounded-lg shadow-lg w-60 md:w-3/4 lg:w-2/3 h-60 md:h-3/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-                  Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-                  Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-                  Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-                  Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-               </p>
-               <button id="sluit-modal-7" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>
-         </div>
+   </div>
+   <div id="modal-7" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-7" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
       </div>
-   <div id="modal-8" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden">
-         <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-            <div class="bg-white rounded-lg shadow-lg w-60 md:w-3/4 lg:w-2/3 h-60 md:h-3/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-                  Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-                  Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-                  Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-                  Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-               </p>
-               <button id="sluit-modal-8" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>
-         </div>
+   </div>
+   <div id="modal-8" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-8" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
       </div>
-   <div id="modal-9" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden">
-         <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-            <div class="bg-white rounded-lg shadow-lg w-60 md:w-3/4 lg:w-2/3 h-60 md:h-3/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, in officiis atque eos, pariatur ea omnis amet voluptatibus earum expedita ab totam illum aliquam vel placeat consectetur optio natus sunt.
-                  Nihil deleniti culpa rem. Modi, asperiores? Nostrum, officia labore. Vero non, cupiditate quibusdam officia facilis ipsam delectus tempora unde, sed facere animi amet quas qui. Fugiat ratione optio repellendus quae!
-                  Aperiam dolore quia tempore provident quam iure distinctio? In, dignissimos eveniet sequi quidem aut deserunt iste delectus magnam? Voluptas soluta odio maiores, autem animi enim ea numquam culpa quam sed!
-                  Facere, explicabo, dignissimos tempore quaerat nobis, quo ipsum earum est non aspernatur error odit sunt! Excepturi molestias similique esse eos optio ea et beatae animi incidunt, illum dolorum magni doloremque.
-                  Maiores aliquid tenetur quibusdam cum doloremque distinctio beatae vitae quod commodi totam, vel odit ipsam itaque veritatis libero quae ratione reiciendis aspernatur quisquam nam quam omnis quaerat in aperiam. Ut.
-               </p>
-               <button id="sluit-modal-3" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>
-         </div>
+   </div>
+   <div id="modal-9" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-9" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
       </div>
+   </div>
    <!-- Section for displaying teams -->
    <div id="section-overzicht-jaarboek-page teams" class="container mx-auto px-4">
     <!-- Section header -->
@@ -243,28 +206,29 @@
    </div>
 
    <!-- in cijfers section -->
-   <div>
-    <h2 class="text-3xl font-bold text-center my-4">Onze werk in cijfers</h2>
-    <div id="container-section-cijfers" class="flex md:flex-row flex-col justify-between px-20 py-15">
-      <!-- in vijf jaar tijd -->
-        <div class="flex flex-col ml-3 mb-10">
-            <span class="mdi mdi-calendar-text-outline md:text-9xl text-7xl text-center"></span>
-            <h3 class="text-3xl ">In vijf jaar tijd</h3>
-            <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
-        </div>
-        <!-- drie generaties -->
-        <div class="flex flex-col ml-3 mb-10">  
-            <span class="mdi mdi-human-male-board-poll md:text-9xl text-7xl text-center"></span>
-            <h3 class="text-3xl">Met behulp <br> Deelnemers</h3>
-            <p>Met behulp van 167 duizend <br> noorderlingen</p>
-        </div>
-        <div class="flex flex-col ml-3 mb-10">
-            <span class="mdi mdi-account-group md:text-9xl text-7xl text-center"></span>
+   <div class="py-8 px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center my-4">Onze werk in cijfers</h2>
+      <div id="container-section-cijfers" class="flex flex-col md:flex-row md:justify-between">
+         <!-- in vijf jaar tijd -->
+         <div class="flex flex-col mb-10 md:ml-3 text-center">
+            <span class="mdi mdi-calendar-text-outline text-7xl md:text-9xl text-center"></span>
+            <h3 class="text-3xl">In vijf jaar tijd</h3>
+            <p>We hebben 100 levens gered of makkelijker gemaakt!!</p>
+         </div>
+         <!-- drie generaties -->
+         <div class="flex flex-col mb-10 md:ml-3 text-center">
+            <span class="mdi mdi-human-male-board-poll text-7xl md:text-9xl text-center"></span>
+            <h3 class="text-3xl">Met behulp Deelnemers</h3>
+            <p>Met behulp van 167 duizend noorderlingen</p>
+         </div>
+         <div class="flex flex-col mb-10 md:ml-3 text-center">
+            <span class="mdi mdi-account-group text-7xl md:text-9xl text-center"></span>
             <h3 class="text-3xl">Drie generaties</h3>
-            <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
-        </div>
-    </div>
+            <p>We hebben 100 levens gered of makkelijker gemaakt!!</p>
+         </div>
+      </div>
    </div>
+
 
 
    </div>
