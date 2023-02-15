@@ -20,6 +20,5 @@ a {
     background-color: var(--container-background-color);
 }
 .mdi {
-color: #02adc7 !important;
-
+    color: #02adc7 !important;
 }
