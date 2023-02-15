@@ -1,0 +1,25 @@
+:root {
+    --container-background-color :#c6f3fb;
+    --card-background-color: #e9f6f9;
+    --primary-text-color: #3470ab;
+}
+#container-overzicht-pagina {
+    background-color: var(--container-background-color);
+}
+h1,h2,h3,h4,h5,h6,p {
+    color: var(--primary-text-color);
+}
+#card-overzicht  {
+    background-color: var(--card-background-color);
+}
+a {
+    color: blue !important;
+    display: block;
+}
+#container-section-cijfers {
+    background-color: var(--container-background-color);
+}
+.mdi {
+color: #02adc7 !important;
+
+}
