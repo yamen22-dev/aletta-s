@@ -19,6 +19,7 @@ a {
 #container-section-cijfers {
     background-color: var(--container-background-color);
 }
-span {
-    color: #02adc7;
+.mdi {
+color: #02adc7 !important;
+
 }

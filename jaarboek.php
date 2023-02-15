@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
     <!-- google material symbols -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -158,46 +158,28 @@
    <!-- in cijfers section -->
    <div>
     <h2 class="text-3xl font-bold text-center my-4">Onze werk in cijfers</h2>
-    <div id="container-section-cijfers" class="flex md:flex-row flex-col justify-between container p-20">
+    <div id="container-section-cijfers" class="flex md:flex-row flex-col justify-between px-20 py-15">
       <!-- in vijf jaar tijd -->
         <div class="flex flex-col ml-3 mb-10">
-            <span class="md:text-9xl text-7xl text-center material-symbols-outlined">
-                schedule
-            </span>
+            <span class="mdi mdi-calendar-text-outline md:text-9xl text-7xl text-center"></span>
             <h3 class="text-3xl ">In vijf jaar tijd</h3>
             <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
         </div>
         <!-- drie generaties -->
+        <div class="flex flex-col ml-3 mb-10">  
+            <span class="mdi mdi-human-male-board-poll md:text-9xl text-7xl text-center"></span>
+            <h3 class="text-3xl">Met behulp <br> Deelnemers</h3>
+            <p>Met behulp van 167 duizend <br> noorderlingen</p>
+        </div>
         <div class="flex flex-col ml-3 mb-10">
-            <span class="md:text-9xl text-7xl text-center material-symbols-outlined">
-                groups
-            </span>
+            <span class="mdi mdi-account-group md:text-9xl text-7xl text-center"></span>
             <h3 class="text-3xl">Drie generaties</h3>
-            <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
-        </div>
-        <div class="flex flex-col ml-3 mb-10">
-            <span class="md:text-9xl text-7xl text-center material-symbols-outlined">
-                query_stats
-            </span>
-            <h3 class="text-3xl">In vijf jaar tijd</h3>
-            <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
-        </div>
-        <div class="flex flex-col ml-3 mb-10">
-            <span class="md:text-9xl text-7xl text-center material-symbols-outlined">
-                schedule
-            </span>
-            <h3 class="text-3xl">In vijf jaar tijd</h3>
-            <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
-        </div>
-        <div class="flex flex-col ml-3 mb-10">
-            <span class="md:text-9xl text-7xl text-center material-symbols-outlined">
-                schedule
-            </span>
-            <h3 class="text-3xl">In vijf jaar tijd</h3>
             <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
         </div>
     </div>
    </div>
+
+
    </div>
         <!-- JavaScript -->
         <script>
