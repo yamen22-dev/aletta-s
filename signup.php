@@ -1,10 +1,3 @@
-<?php
-// Mail verstuur systeem
-if (isset($_POST['aanmelden'])) {
-    require("./php/aanmelding.php");
-    sendMail($_POST);
-}
-?>
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -20,6 +13,12 @@ if (isset($_POST['aanmelden'])) {
 
 <body>
     <?php
+    // Mail verstuur systeem
+    if (isset($_POST['aanmelden'])) {
+        require("./php/aanmelding.php");
+        sendMail($_POST);
+    }
+
     require("components/header.php");
     ?>
     <main>

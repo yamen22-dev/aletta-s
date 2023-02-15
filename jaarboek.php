@@ -13,12 +13,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
     <!-- google material symbols -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-gray-100">
    <div class="container mx-auto p-4">
-   <div id="section-overzicht-jaarboek-page" class="my-10">
+   <section>
+      <div id="section-overzicht-jaarboek-page" class="my-10">
       <h1 class="text-3xl font-bold my-4 text-center">Overzicht voorgaande jaren</h1>
       <div  class="flex justify-center w-full ">
          <div id="container-overzicht-pagina" class="w-full lg:w-1/2  rounded-lg p-8">
@@ -47,9 +48,11 @@
             </div>
          </div>
       </div>
-   </div>
+      </div>
+   </section>
    <!-- Modals -->
-   <div id="modal-1" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+   <section>
+      <div id="modal-1" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
       <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
          <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
             <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
@@ -139,7 +142,9 @@
          </div>  
       </div>
    </div>
-   <!-- Section for displaying teams -->
+   
+   <section>
+      <!-- Section for displaying teams -->
    <div id="section-overzicht-jaarboek-page teams" class="container mx-auto px-4">
     <!-- Section header -->
       <h2 class="text-3xl font-bold mb-4 text-center">Teams</h2>
@@ -205,29 +210,35 @@
       </div>
    </div>
 
+   </section>
+   
+   </section>
+
    <!-- in cijfers section -->
-   <div class="py-8 px-4 sm:px-6 lg:px-8">
+   <section>
+      <div class="py-8 px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-center my-4">Onze werk in cijfers</h2>
       <div id="container-section-cijfers" class="flex flex-col md:flex-row md:justify-between">
          <!-- in vijf jaar tijd -->
-         <div class="flex flex-col mb-10 md:ml-3 text-center">
+         <div class="flex flex-col m-10 md:ml-3 text-center">
             <span class="mdi mdi-calendar-text-outline text-7xl md:text-9xl text-center"></span>
             <h3 class="text-3xl">In vijf jaar tijd</h3>
             <p>We hebben 100 levens gered of makkelijker gemaakt!!</p>
          </div>
          <!-- drie generaties -->
-         <div class="flex flex-col mb-10 md:ml-3 text-center">
+         <div class="flex flex-col m-10 md:ml-3 text-center">
             <span class="mdi mdi-human-male-board-poll text-7xl md:text-9xl text-center"></span>
             <h3 class="text-3xl">Met behulp Deelnemers</h3>
             <p>Met behulp van 167 duizend noorderlingen</p>
          </div>
-         <div class="flex flex-col mb-10 md:ml-3 text-center">
+         <div class="flex flex-col m-10 md:ml-3 text-center">
             <span class="mdi mdi-account-group text-7xl md:text-9xl text-center"></span>
             <h3 class="text-3xl">Drie generaties</h3>
             <p>We hebben 100 levens gered of makkelijker gemaakt!!</p>
          </div>
       </div>
    </div>
+   </section>
 
 
 
