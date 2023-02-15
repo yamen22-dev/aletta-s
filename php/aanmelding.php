@@ -11,30 +11,31 @@
         $opmerkingen = $post['opmerkingen'];
 
         $naam_1 = $post['naam_1'];
-        $naam_2 = $post['naam_2'];
-        $naam_3 = $post['naam_3'];
-        $naam_4 = $post['naam_4'];
+        $naam_2 = $post['naam_2'] ?? '';
+        $naam_3 = $post['naam_3'] ?? '';
+        $naam_4 = $post['naam_4'] ?? '';
         $email_1 = $post['email_1'];
-        $email_2 = $post['email_2'];
-        $email_3 = $post['email_3'];
-        $email_4 = $post['email_4'];
+        $email_2 = $post['email_2'] ?? '';
+        $email_3 = $post['email_3'] ?? '';
+        $email_4 = $post['email_4'] ?? '';
 
         if(!empty($teamnaam) && !empty($school_opleiding) && !empty($opmerkingen)) {
         $mail = new PHPMailer(true);
         
         $mail->isSMTP();
         $mail->IsHTML(true);       
-        $mail->Host = "mail.zxcs.nl";
+        $mail->Host = "smtp-relay.sendinblue.com";
         $mail->SMTPAuth = true;
-        $mail->Username = "aletta@pascalservices.nl";
-        $mail->Password = "UgFQaBqz";
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Username = "pswwiersma@st.noorderpoort.nl";
+        $mail->Password = "UYs2w6gW1Pbp8tQB";
+        // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->From = "aletta@pascalservices.nl";
+        $mail->From = "pswwiersma@st.noorderpoort.nl";
         $mail->FromName = "Aletta";
         // $mail->SMTPDebug = 2;
 
-        $mail->addAddress("pswwiersma@st.noorderpoort.nl");
+        $mail->addAddress("pascalwiersma2005@gmail.com");
         $mail->Subject = "Aletta | Er is een nieuwe aanmelding ingediend";
         $mail->Body = '
         <center>
