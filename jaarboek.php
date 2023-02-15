@@ -207,28 +207,29 @@
    </div>
 
    <!-- in cijfers section -->
-   <div>
-    <h2 class="text-3xl font-bold text-center my-4">Onze werk in cijfers</h2>
-    <div id="container-section-cijfers" class="flex md:flex-row flex-col justify-between px-20 py-15">
-      <!-- in vijf jaar tijd -->
-        <div class="flex flex-col ml-3 mb-10">
-            <span class="mdi mdi-calendar-text-outline md:text-9xl text-7xl text-center"></span>
-            <h3 class="text-3xl ">In vijf jaar tijd</h3>
-            <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
-        </div>
-        <!-- drie generaties -->
-        <div class="flex flex-col ml-3 mb-10">  
-            <span class="mdi mdi-human-male-board-poll md:text-9xl text-7xl text-center"></span>
-            <h3 class="text-3xl">Met behulp <br> Deelnemers</h3>
-            <p>Met behulp van 167 duizend <br> noorderlingen</p>
-        </div>
-        <div class="flex flex-col ml-3 mb-10">
-            <span class="mdi mdi-account-group md:text-9xl text-7xl text-center"></span>
-            <h3 class="text-3xl">Drie generaties</h3>
-            <p>We hebben 100 levens gered <br> of makkelijker gemaakt!!</p>
-        </div>
+   <div class="py-8 px-4 sm:px-6 lg:px-8">
+  <h2 class="text-3xl font-bold text-center my-4">Onze werk in cijfers</h2>
+  <div id="container-section-cijfers" class="flex flex-col md:flex-row md:justify-between">
+    <!-- in vijf jaar tijd -->
+    <div class="flex flex-col mb-10 md:ml-3 text-center">
+      <span class="mdi mdi-calendar-text-outline text-7xl md:text-9xl text-center"></span>
+      <h3 class="text-3xl">In vijf jaar tijd</h3>
+      <p>We hebben 100 levens gered of makkelijker gemaakt!!</p>
     </div>
-   </div>
+    <!-- drie generaties -->
+    <div class="flex flex-col mb-10 md:ml-3 text-center">
+      <span class="mdi mdi-human-male-board-poll text-7xl md:text-9xl text-center"></span>
+      <h3 class="text-3xl">Met behulp Deelnemers</h3>
+      <p>Met behulp van 167 duizend noorderlingen</p>
+    </div>
+    <div class="flex flex-col mb-10 md:ml-3 text-center">
+      <span class="mdi mdi-account-group text-7xl md:text-9xl text-center"></span>
+      <h3 class="text-3xl">Drie generaties</h3>
+      <p>We hebben 100 levens gered of makkelijker gemaakt!!</p>
+    </div>
+  </div>
+</div>
+
 
 
    </div>
