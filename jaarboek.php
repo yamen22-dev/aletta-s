@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
     <!-- google material symbols -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-gray-100">
