@@ -1,10 +1,3 @@
-<?php
-// Mail verstuur systeem
-if (isset($_POST['aanmelden'])) {
-    require("./php/aanmelding.php");
-    sendMail($_POST);
-}
-?>
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -16,12 +9,16 @@ if (isset($_POST['aanmelden'])) {
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js.signup.js"></script>
-
 </head>
 
 <body>
     <?php
+    // Mail verstuur systeem
+    if (isset($_POST['aanmelden'])) {
+        require("./php/aanmelding.php");
+        sendMail($_POST);
+    }
+
     require("components/header.php");
     ?>
     <main>
@@ -117,6 +114,8 @@ if (isset($_POST['aanmelden'])) {
     <?php
     require("components/footer.php");
     ?>
+    <script src="js/signup.js">
+    </script>
 </body>
 
 </html>
