@@ -1,38 +1,4 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/tailwind.js"></script>
-    <script src="js/script.js"></script>
-</head>
-
-<body>
-    <header>
-        <div>
-            <a href="index.php" class="flex justify-center mt-4 mb-4">
-                <img class="h-28 mr-19" src="img/aletta-blue-logo.png" alt="Logo">
-            </a>
-        </div>
-    </header>
-    <main class="bg-black">
-        <section class="dark:bg-gray-900">
-            <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                <div class="mr-auto place-self-center lg:col-span-7">
-                    <h1 class="text-white max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-                        Aletta Jacobs School of Public Health</h1>
-                    <p class="text-white max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                        Together for more healthy years</p>
-                </div>
-                <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                    <img src="https://www.canonvannederland.nl/image/2017/8/8/34_alettajacobs.png%28mediaclass-window-img-home.7fe0bcab7399a91414e111000f0206e8dfdd46f4%29.png" alt="Aletta-Jacob">
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-900 mt-5">
+<footer class="p-4 bg-white sm:p-6 dark:bg-gray-900 mt-5">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <div>
@@ -84,7 +50,4 @@
                 </a>
             </div>
         </div>
-    </footer>
-</body>
-
-</html>
+</footer>
