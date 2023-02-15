@@ -1,7 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<?php require('./php/aanmelding.php'); ?>
-
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -12,9 +8,17 @@
     <title>ARYC | Aanmelden</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.js"></script>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+</head>
 <body>
+<?php  
+    // Mail verstuur systeem
+    if(isset($_POST['aanmelden'])) {
+        require("./php/aanmelding.php");
+        sendMail($_POST);
+    }
+?>
     <header>
         <div>
 	        <a href="index.php" class="flex justify-center mt-4">
@@ -53,7 +57,7 @@
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="text" name="name_1" placeholder="Naam*" />
+                                type="text" name="naam_1" placeholder="Naam*" />
                         </div>
                         <div class="col">
                             <input
@@ -65,7 +69,7 @@
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="text" name="name_2" placeholder="Naam*" />
+                                type="text" name="naam_2" placeholder="Naam*" />
                         </div>
                         <div class="col">
                             <input
@@ -77,7 +81,7 @@
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="text" name="name_3" placeholder="Naam*" />
+                                type="text" name="naam_3" placeholder="Naam*" />
                         </div>
                         <div class="col">
                             <input
@@ -89,7 +93,7 @@
                         <div class="col">
                             <input
                                 class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                type="text" name="name_4" placeholder="Naam*" />
+                                type="text" name="naam_4" placeholder="Naam*" />
                         </div>
                         <div class="col">
                             <input
@@ -99,7 +103,7 @@
                     </div>
                     <div class="my-4">
                         <textarea placeholder="Opmerking"
-                            class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+                           name="opmerkingen" type="text" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
                     </div>
                     <div class="my-2 w-1/2 lg:w-1/4">
                         <button type="submit" name="aanmelden" class="uppercase text-sm font-bold tracking-wide text-gray-100 p-3 rounded-lg w-full 

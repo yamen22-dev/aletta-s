@@ -1,117 +1,83 @@
 <?php
- // SMTP Server
- require("./packages/PHPMailer/autoload.php");
-
- use PHPMailer\PHPMailer\PHPMailer;
- use PHPMailer\PHPMailer\Exception;
-
- $mail = new PHPMailer(true);
-
- $mail->isSMTP();
- $mail->IsHTML(true);       
- $mail->Host = "mail.zxcs.nl";
- $mail->SMTPAuth = true;
- $mail->Username = "aletta@pascalservices.nl";
- $mail->Password = "u7ytgDsS";
- $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
- $mail->Port = 587;
- $mail->From = "aletta@pascalservices.nl";
- $mail->FromName = "Aletta";
-//  $mail->SMTPDebug = 2;
-
-
-if(isset($_POST['aanmelden'])) {
-
-
-    // Variables
-    $teamnaam = $_POST['teamnaam'];
-    $school_opleiding = $_POST['school-opleiding'];
+    // PHP Mailer ophalen
+    include("./packages/PHPMailer/autoload.php");
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
     
-    $name_1 = $_POST['name_1'];
-    $name_2 = $_POST['name_2'];
-    $name_3 = $_POST['name_3'];
-    $name_4 = $_POST['name_4'];
-    $email_1 = $_POST['email_1'];
-    $email_2 = $_POST['email_2'];
-    $email_3 = $_POST['email_3'];
-    $email_4 = $_POST['email_4'];
- 
+    // Functie om mail op te halen en te versturen
+    function sendMail ($post) {
+        $teamnaam = $post['teamnaam'];
+        $school_opleiding = $post['school-opleiding'];
+        $opmerkingen = $post['opmerkingen'];
 
-    $mail->addAddress("pascalwiersma2005@gmail.com");
-    $mail->Subject = "Aletta | Er is een nieuwe aanmelding ingediend";
-    $mail->Body = '<!DOCTYPE html>
-    <html>
-    <head>
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #eeeeee;
-        }
-        .container {
-          max-width: 600px;
-          margin: 0 auto;
-          background-color: #ffffff;
-          padding: 20px;
-          text-align: center;
-        }
-        .logo {
-          width: 200px;
-          height: auto;
-          margin: 0 auto;
-        }
-        h1 {
-          color: #006699;
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-        p {
-          font-size: 16px;
-          line-height: 1.5;
-          margin-bottom: 20px;
-        }
-        ul {
-          list-style: none;
-          padding: 0;
-          margin-bottom: 20px;
-        }
-        li {
-          font-size: 16px;
-          line-height: 1.5;
-          margin-bottom: 10px;
-        }
-        a {
-          color: #006699;
-          text-decoration: none;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <h1>Er is een nieuwe aanmelding binnen gekomen,<br>Hierbij de gegevens:</h1>
+        $naam_1 = $post['naam_1'];
+        $naam_2 = $post['naam_2'];
+        $naam_3 = $post['naam_3'];
+        $naam_4 = $post['naam_4'];
+        $email_1 = $post['email_1'];
+        $email_2 = $post['email_2'];
+        $email_3 = $post['email_3'];
+        $email_4 = $post['email_4'];
 
-        <small>Dit is een automatische e-mail.<br>Reageren op deze e-mail wordt niet verwacht. Er kunnen geen rechten worden ontleend aan de informatie in deze e-mail. Als u deze e-mail niet herkent, kunt u deze als niet verzonden beschouwen.</small>
-      </div>
-    </body>
-    </html>';
+        if(!empty($teamnaam) && !empty($school_opleiding) && !empty($opmerkingen)) {
+        $mail = new PHPMailer(true);
+        
+        $mail->isSMTP();
+        $mail->IsHTML(true);       
+        $mail->Host = "mail.zxcs.nl";
+        $mail->SMTPAuth = true;
+        $mail->Username = "aletta@pascalservices.nl";
+        $mail->Password = "UgFQaBqz";
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port = 587;
+        $mail->From = "aletta@pascalservices.nl";
+        $mail->FromName = "Aletta";
+        // $mail->SMTPDebug = 2;
 
+        $mail->addAddress("pswwiersma@st.noorderpoort.nl");
+        $mail->Subject = "Aletta | Er is een nieuwe aanmelding ingediend";
+        $mail->Body = '
+        <center>
+        <h2>Nieuwe aanmelding van: ' . $teamnaam . '</h2>
+        <p><strong>School / Opleiding:</strong> ' . $school_opleiding . '</p>
+        <p><strong>Teamleden:</strong></p>
+        <ol>
+            <li>' . $naam_1 . ' - ' . $email_1 . '</li>
+            <li>' . $naam_2 . ' - ' . $email_2 . '</li>
+            <li>' . $naam_3 . ' - ' . $email_3 . '</li>
+            <li>' . $naam_4 . ' - ' . $email_4 . '</li>
+        </ol>
+        <p>Eventuele opmerkingen:</p>
+        <p> ' . $opmerkingen . '</p>
+        </center>
+        ';
 
-  try {
-    $mail->send();
-    echo "<script>
-    Swal.fire({
-        title: 'De aanmelding is verstuurd!',
-        text: 'We nemen binnenkort contact met je op.',
-        icon: 'success',
-        confirmButtonColor: '#13acc8',
-        confirmButtonText: 'Top!'
-        });
-        </script>";
-} catch (Exception $e) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
-}
-  
+        try {
+            $mail->send();
+            echo "
+        <script>
+            Swal.fire({
+                title: 'De aanmelding is verstuurd!',
+                text: 'We nemen binnenkort contact met je op.',
+                icon: 'success',
+                confirmButtonColor: '#13acc8',
+                confirmButtonText: 'Top!'
+                });
+                </script>";
+        } catch (Exception $e) {
+            echo "Mailer Error: " . $mail->ErrorInfo;
+        }
 
-}
+    } else {
+        echo "<script>
+        Swal.fire({
+            title: 'Nog niet alles is ingevuld',
+            text: 'Controleer of alles is ingevuld',
+            icon: 'error',
+            confirmButtonColor: '#13acc8',
+            confirmButtonText: 'Oke!'
+            });
+            </script>";
+    }
 
-
-?>
+    }
