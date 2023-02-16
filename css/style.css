@@ -23,8 +23,7 @@ p {
 #card-overzicht {
     background-color: var(--card-background-color);
 }
-
-a {
+a[id*="lees-meer-link"] {
     color: blue !important;
     display: block;
 }
