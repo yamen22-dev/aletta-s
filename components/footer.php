@@ -33,9 +33,9 @@
                 </div>
             </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-black sm:text-center">© 2023 <a href="index.php" class="hover:underline">ARYC</a>. All Rights Reserved.
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
+        <div class="sm:flex sm:items-center sm:justify-between ">
+            <span class="text-sm text-black sm:text-center flex">© <?= date("Y"); ?>&nbsp;<a href="index.php" class="hover:underline">ARYC</a>. All Rights Reserved.
             </span>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <a href="https://nl.linkedin.com/company/ajsph?trk=public_post_feed-actor-name" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
