@@ -17,6 +17,10 @@
 </head>
 
 <body class="bg-gray-100">
+   <?php
+   
+      require_once "components/header.php";
+    ?>
    <div class="container mx-auto p-4">
    <section>
       <div id="section-overzicht-jaarboek-page" class="my-10">
@@ -241,8 +245,12 @@
    </section>
 
 
-
+   
    </div>
+   <?php
+   
+      require_once "components/footer.php";
+    ?>
         <!-- JavaScript -->
         <script src="js/jaarboek.js"></script>
     </body>
