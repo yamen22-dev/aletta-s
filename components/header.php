@@ -11,8 +11,8 @@ function head($title) { ?>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="js/tailwind.js"></script>
         <link rel="/aletta-s/img/favicon_io/apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/aletta-favicon-logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/aletta-faviocn-logo.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">

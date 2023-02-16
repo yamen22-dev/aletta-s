@@ -23,14 +23,14 @@
                <div id="card-overzicht" class="bg-pink-100 rounded-lg p-4 my-4 flex flex-col md:flex-row md:space-x-20 md:items-center">
                   <h3 class=" text-lg mb-4 md:mb-0">2021</h3>
                   <p>feb</p>
-                  <p>De beste gebeurtenissen van mei
+                  <p>De beste gebeurtenissen van november
                      <a href="#" id="lees-meer-link-2">Lees meer...</a>
                   </p>
                </div>
                <div id="card-overzicht" class="bg-pink-100 rounded-lg p-4 my-4 flex flex-col md:flex-row md:space-x-20 md:items-center">
                   <h3 class=" text-lg mb-4 md:mb-0">2022</h3>
                   <p>sep</p>
-                  <p>De beste gebeurtenissen van mei
+                  <p>De beste gebeurtenissen van juli
                      <a href="#" id="lees-meer-link-3">Lees meer...</a>
                   </p>
                </div>

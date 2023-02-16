@@ -29,7 +29,8 @@ p {
 }
 
 a[id*="lees-meer-link"] {
-    color: blue !important;
+    color: black !important;
+    font-weight: bold;
     display: block;
     color: #91b8d9;
 }
