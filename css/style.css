@@ -23,9 +23,11 @@ p {
 #card-overzicht {
     background-color: var(--card-background-color);
 }
+
 a[id*="lees-meer-link"] {
     color: blue !important;
     display: block;
+    color: #91b8d9;
 }
 
 #container-section-cijfers {
