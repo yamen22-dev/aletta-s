@@ -1,8 +1,5 @@
-<?php
-    require("components/header.php");
-    head("Jaarboek");
-?>
-
+<!DOCTYPE html>
+<html>
 <head>
     <!-- Specifies the character encoding of the document -->
     <meta charset="UTF-8">
@@ -240,9 +237,6 @@
          </div>
       </div>
    </div>
-
-   </section>
-   
    </section>
 
    <!-- in cijfers section -->
