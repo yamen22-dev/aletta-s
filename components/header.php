@@ -18,6 +18,7 @@ function head($title) { ?>
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
   
 <?php  }
