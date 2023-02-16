@@ -9,6 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -109,11 +111,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <?php
+        </div>   <?php
     require("components/footer.php");
     ?>
+    </main>
     <script src="js/signup.js">
     </script>
 </body>
