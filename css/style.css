@@ -1,15 +1,20 @@
+/* Importing fonts from Google Fonts and Font Awesome */
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
+/* Defining custom CSS variables */
 :root {
     --container-background-color: #c6f3fb;
     --card-background-color: #e9f6f9;
     --primary-text-color: #3470ab;
 }
 
+/* Styling the container element for the overview page */
 #container-overzicht-pagina {
     background-color: var(--container-background-color);
 }
 
+/* Styling headings and paragraphs with primary text color */
 h1,
 h2,
 h3,
@@ -20,24 +25,38 @@ p {
     color: var(--primary-text-color);
 }
 
+/* Styling the card for the overview page */
 #card-overzicht {
     background-color: var(--card-background-color);
 }
 
+/* Styling "Lees meer" links */
 a[id*="lees-meer-link"] {
     color: blue !important;
+    /* Blue is applied to "Lees meer" links */
     display: block;
     color: #91b8d9;
+    /* Light blue color is applied to other links */
 }
 
+/* Styling the container section for cijfers */
 #container-section-cijfers {
     background-color: var(--container-background-color);
 }
 
+/* Styling Material Design Icons (MDI) */
 .mdi {
     color: #02adc7 !important;
 }
 
+/* Styling the font family for the entire page */
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+/* Styling the navigation bar when it is scrolled */
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    /* A white background color is applied */
+    z-index: 1000;
 }
