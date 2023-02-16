@@ -33,7 +33,7 @@
         $mail->Port = 587;
         $mail->From = "aletta@pascalservices.nl";
         $mail->FromName = "Aletta";
-        $mail->SMTPDebug = 2;
+        // $mail->SMTPDebug = 2;
 
         $mail->addAddress("aletta@pascalservices.nl");
         $mail->Subject = "Aletta | Er is een nieuwe aanmelding ingediend";
