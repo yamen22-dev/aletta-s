@@ -4,8 +4,8 @@
 
 /* Defining custom CSS variables */
 :root {
-    --container-background-color: #c6f3fb;
-    --card-background-color: #e9f6f9;
+    --container-background-color: #91b8d9;
+    --card-background-color: white;
     --primary-text-color: #3470ab;
 }
 
@@ -32,11 +32,12 @@ p {
 
 /* Styling "Lees meer" links */
 a[id*="lees-meer-link"] {
-    color: blue !important;
-    /* Blue is applied to "Lees meer" links */
+    color: black !important;
+    /* Black is applied to "Lees meer" links */
     display: block;
     color: #91b8d9;
-    /* Light blue color is applied to other links */
+    font-weight: bold;
+    /* #91b8d9 color is applied to other links */
 }
 
 /* Styling the container section for cijfers */
@@ -46,7 +47,7 @@ a[id*="lees-meer-link"] {
 
 /* Styling Material Design Icons (MDI) */
 .mdi {
-    color: #02adc7 !important;
+    color: white !important;
 }
 
 /* Styling the font family for the entire page */
