@@ -1,175 +1,136 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- Specifies the character encoding of the document -->
-    <meta charset="UTF-8">
-
-    <!-- Specifies the version of IE that the page should be rendered as -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Sets the viewport width and initial zoom level of the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Specifies the title of the document -->
-    <title>Jaarboek</title>
-
-    <!-- Loads the TailwindCSS library from a CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Loads a custom TailwindCSS config file -->
-    <script src="js/tailwind.js"></script>
-
-    <!-- Specifies a set of icons for the browser to use -->
-    <link rel="/aletta-s/img/favicon_io/apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
-
-    <!-- Loads the Google Material Design Icons library from a CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
-
-    <!-- Loads a custom stylesheet for the document -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<?php
+    require("components/header.php");
+    head("Jaarboek");
+?>
 
 <body class="bg-gray-100">
-   <?php
-    // Require the header.php file that contains the HTML header information
-    require_once "components/header.php";
-    ?>
-<!-- Start of main content -->
-<div class="container mx-auto p-4">
-    <section>
-        <div id="section-overzicht-jaarboek-page" class="my-10">
-            <!-- Main title of the section -->
-            <h1 class="text-3xl font-bold my-4 text-center">Overzicht voorgaande jaren</h1>
-            <div class="flex justify-center w-full">
-                <div id="container-overzicht-pagina" class="w-full lg:w-1/2 rounded-lg p-8">
-                    <div class="gap-4">
-                        <!-- First card with information -->
-                        <div id="card-overzicht" class="bg-pink-100 rounded-lg p-4 my-4 flex flex-col md:flex-row md:space-x-20 md:items-center">
-                            <h3 class="text-lg mb-4 md:mb-0">2020</h3>
-                            <p>juni</p>
-                            <p>De beste gebeurtenissen van mei
-                                <a href="#" id="lees-meer-link-1">Lees meer...</a>
-                            </p>
-                        </div>
-                        <!-- Second card with information -->
-                        <div id="card-overzicht" class="bg-pink-100 rounded-lg p-4 my-4 flex flex-col md:flex-row md:space-x-20 md:items-center">
-                            <h3 class="text-lg mb-4 md:mb-0">2021</h3>
-                            <p>feb</p>
-                            <p>De beste gebeurtenissen van mei
-                                <a href="#" id="lees-meer-link-2">Lees meer...</a>
-                            </p>
-                        </div>
-                        <!-- Third card with information -->
-                        <div id="card-overzicht" class="bg-pink-100 rounded-lg p-4 my-4 flex flex-col md:flex-row md:space-x-20 md:items-center">
-                            <h3 class="text-lg mb-4 md:mb-0">2022</h3>
-                            <p>sep</p>
-                            <p>De beste gebeurtenissen van mei
-                                <a href="#" id="lees-meer-link-3">Lees meer...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-   <!-- Modals -->
+   <?php require "components/navbar.php"; ?>
+   <div class="container mx-auto p-4">
    <section>
-         <div id="modal-1" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-1" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
+      <div id="section-overzicht-jaarboek-page" class="my-10">
+      <h1 class="text-3xl font-bold my-4 text-center">Overzicht voorgaande jaren</h1>
+      <div  class="flex justify-center w-full ">
+         <div id="container-overzicht-pagina" class="w-full lg:w-1/2  rounded-lg p-8">
+            <div class="gap-4">
+               <div id="card-overzicht" class="bg-pink-100 rounded-lg p-4 my-4 flex flex-col md:flex-row md:space-x-20 md:items-center">
+                  <h3 class=" text-lg mb-4 md:mb-0">2020</h3>
+                  <p>juni</p>
+                  <p>De beste gebeurtenissen van mei
+                     <a href="#" id="lees-meer-link-1">Lees meer...</a>
+                  </p>
+               </div>
+               <div id="card-overzicht" class="bg-pink-100 rounded-lg p-4 my-4 flex flex-col md:flex-row md:space-x-20 md:items-center">
+                  <h3 class=" text-lg mb-4 md:mb-0">2021</h3>
+                  <p>feb</p>
+                  <p>De beste gebeurtenissen van november
+                     <a href="#" id="lees-meer-link-2">Lees meer...</a>
+                  </p>
+               </div>
+               <div id="card-overzicht" class="bg-pink-100 rounded-lg p-4 my-4 flex flex-col md:flex-row md:space-x-20 md:items-center">
+                  <h3 class=" text-lg mb-4 md:mb-0">2022</h3>
+                  <p>sep</p>
+                  <p>De beste gebeurtenissen van juli
+                     <a href="#" id="lees-meer-link-3">Lees meer...</a>
+                  </p>
+               </div>
             </div>
          </div>
-      <div id="modal-2" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-2" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
-         </div>
       </div>
-      <div id="modal-3" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-3" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
-         </div>
-      </div>
-      <div id="modal-4" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-4" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
-         </div>
-      </div>
-      <div id="modal-5" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-5" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
-         </div>
-      </div>
-      <div id="modal-6" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-6" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
-         </div>
-      </div>
-      <div id="modal-7" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-7" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
-         </div>
-      </div>
-      <div id="modal-8" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-8" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
-         </div>
-      </div>
-      <div id="modal-9" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
-         <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
-            <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
-               <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
-                  <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
-                  <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
-               <button id="sluit-modal-9" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
-            </div>  
-         </div>
       </div>
    </section>
-
+   <!-- Modals -->
+   <section>
+      <div id="modal-1" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-1" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   <div id="modal-2" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-2" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   <div id="modal-3" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-3" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   <div id="modal-4" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-4" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   <div id="modal-5" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-5" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   <div id="modal-6" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-6" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   <div id="modal-7" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-7" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   <div id="modal-8" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-8" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   <div id="modal-9" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden ">
+      <div class="fixed top-0 left-0 w-full h-screen flex items-center justify-center ">
+         <div class="overflow-y-scroll bg-white rounded-lg shadow-lg w-3/4 md:w-3/4 lg:w-2/3 h-5/6 md:h-4/4 lg:h-2/3 p-6 relative">
+            <h2 class="text-5xl font-semibold mb-10">Titel van het project</h2>
+               <h3 class="text-xl mb-4">Naam van de opleiding, naam van de school</h3>
+               <p class="overflow-y-auto  mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugiat quia repellendus debitis voluptate sunt odit consequatur reiciendis commodi! Earum magnam quis necessitatibus eius beatae nemo ipsam error ea possimus!</p>
+            <button id="sluit-modal-9" class="absolute right-0 top-0 mt-2 mr-5 my-10">x</button>
+         </div>  
+      </div>
+   </div>
+   
    <section>
       <!-- Section for displaying teams -->
    <div id="section-overzicht-jaarboek-page teams" class="container mx-auto px-4">
@@ -236,6 +197,9 @@
          </div>
       </div>
    </div>
+
+   </section>
+   
    </section>
 
    <!-- in cijfers section -->
