@@ -4,7 +4,9 @@ tailwind.config = {
         extend: {
             colors: {
                 primarycolor: '#13acc8',
-                secondarycolor: '#9ed1a1',
+                // secondarycolor: '#9ed1a1',
+                secondarycolor: '#b8d5db',
+
             }
         },
         fontFamily: {
