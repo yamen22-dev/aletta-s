@@ -1,22 +1,24 @@
-<header>
-    <div class="flex justify-evenly items-center mt-4">
-        <div>
-            <a href="jaarboek.php" class="">
-                <p class="bg-secondarycolor p-1.5 md:p-3 text-white rounded">Jaarboek</p>
-            </a>
-        </div>
-        <div>
-            <a href="index.php" class="mt-4">
-                <img class="h-28 mr-19" src="img/aletta-blue-logo.png" alt="Logo">
-            </a>
-        </div>
-        <div>
-        <div>
-            <a href="signup.php">
-                <p class="bg-secondarycolor p-1.5 md:p-3 text-white rounded">Aanmelden</p>
-            </a>
-        </div>
+<?php
 
-        </div>
-    </div>
-</header>
+function head($title) { ?>
+    <!doctype html>
+    <html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><?= $title ?> - ARYC</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/tailwind.js"></script>
+        <link rel="/aletta-s/img/favicon_io/apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/aletta-s/img/favicon_io/apple-touch-icon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+
+<?php  }
+?>
