@@ -24,18 +24,18 @@
         
         $mail->isSMTP();
         $mail->IsHTML(true);       
-        $mail->Host = "smtp-relay.sendinblue.com";
+        $mail->Host = "mail.zxcs.nl";
         $mail->SMTPAuth = true;
-        $mail->Username = "pswwiersma@st.noorderpoort.nl";
-        $mail->Password = "UYs2w6gW1Pbp8tQB";
-        // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->SMTPSecure = 'tls';
+        $mail->Username = "aletta@pascalservices.nl";
+        $mail->Password = "NA3vcv4Ka";
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        // $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->From = "pswwiersma@st.noorderpoort.nl";
+        $mail->From = "aletta@pascalservices.nl";
         $mail->FromName = "Aletta";
-        // $mail->SMTPDebug = 2;
+        $mail->SMTPDebug = 2;
 
-        $mail->addAddress("pascalwiersma2005@gmail.com");
+        $mail->addAddress("aletta@pascalservices.nl");
         $mail->Subject = "Aletta | Er is een nieuwe aanmelding ingediend";
         $mail->Body = '
         <center>
