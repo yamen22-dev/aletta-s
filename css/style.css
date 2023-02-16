@@ -1,27 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-    --container-background-color :#c6f3fb;
+    --container-background-color: #c6f3fb;
     --card-background-color: #e9f6f9;
     --primary-text-color: #3470ab;
 }
+
 #container-overzicht-pagina {
     background-color: var(--container-background-color);
 }
-h1,h2,h3,h4,h5,h6,p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
 }
-#card-overzicht  {
+
+#card-overzicht {
     background-color: var(--card-background-color);
 }
-a {
+
+a[id*="lees-meer-link"] {
     color: blue !important;
     display: block;
-    font-family: 'Roboto', sans-serif;
+    color: #91b8d9;
 }
+
 #container-section-cijfers {
     background-color: var(--container-background-color);
 }
+
 .mdi {
     color: #02adc7 !important;
 }
+<<<<<<< HEAD
+=======
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+>>>>>>> acd0b5ce93858feacf1846ea4388259c6082481c
