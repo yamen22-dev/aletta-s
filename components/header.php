@@ -2,7 +2,7 @@
     <div class="flex justify-evenly items-center mt-4">
         <div>
             <a href="jaarboek.php" class="">
-                <p class="bg-secondarycolor p-3 text-white rounded">Jaarboek</p>
+                <p class="bg-secondarycolor p-1.5 md:p-3 text-white rounded">Jaarboek</p>
             </a>
         </div>
         <div>
@@ -13,7 +13,7 @@
         <div>
         <div>
             <a href="signup.php">
-                <p class="bg-secondarycolor p-3 text-white rounded">Aanmelden</p>
+                <p class="bg-secondarycolor p-1.5 md:p-3 text-white rounded">Aanmelden</p>
             </a>
         </div>
 
