@@ -196,11 +196,7 @@
             </p>
          </div>
       </div>
-   </div>
-
-   </section>
-   
-   </section>
+</div>
 
    <!-- in cijfers section -->
    <section>
@@ -227,12 +223,8 @@
       </div>
    </div>
    </section>
-
-
-   
    </div>
    <?php
-   
       require_once "components/footer.php";
     ?>
         <!-- JavaScript -->

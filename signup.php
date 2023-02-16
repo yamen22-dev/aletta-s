@@ -18,7 +18,7 @@
         <div class="flex justify-center items-center mb-32">
             <div class="container mx-auto my-4 px-4 lg:px-20">
                 <form method="POST">
-                    <div class="bg-primarycolor w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                    <div class="bg-secondarycolor w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                         <div class="flex">
                             <h1 class="font-bold uppercase text-5xl text-white">Aanmelden</h1>
                         </div>
@@ -73,14 +73,14 @@
                         </div>
                         <div class="my-2 w-1/2 lg:w-1/4">
                             <button type="submit" name="aanmelden" class="uppercase text-sm font-bold tracking-wide text-gray-100 p-3 rounded-lg w-full 
-                              focus:outline-none focus:shadow-outline bg-secondarycolor">
+                              focus:outline-none focus:shadow-outline bg-primarycolor">
                                 Aanmelden
                             </button>
                         </div>
                     </div>
                 </form>
 
-                <div class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-secondarycolor rounded-2xl">
+                <div class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-primarycolor rounded-2xl">
                     <div class="flex flex-col text-white">
                         <h1 class="font-bold uppercase text-4xl my-4 text-white">Vul hier in!</h1>
                         <p class="text-black">Vul in dit formulier uw team em teamleden in zodat wij dit kunnen gebruikten!</p>

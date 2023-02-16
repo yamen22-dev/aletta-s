@@ -20,10 +20,9 @@
         ">
        <div>
           <a href="index.php">
-            <img class="w-16 m-3" src="img/aletta-blue-logo.png" alt="">
+            <img class="w-16 m-1 md:m-4" src="img/aletta-blue-logo.png" alt="aryc-logo">
           </a>
         </div>
-       
          <svg
             xmlns="http://www.w3.org/2000/svg"
             id="menu-button"
@@ -39,7 +38,6 @@
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-       
        <div class="hidden w-full md:flex md:items-center text-center md:w-auto" id="menu">
           <ul
             class="
@@ -66,7 +64,4 @@
   </header>
 </body>
 
-
-<!-- jQuery library and custom script -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/script.js"></script>
