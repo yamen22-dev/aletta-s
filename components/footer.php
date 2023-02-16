@@ -14,9 +14,9 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Pagina's</h2>
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="/index"  class="hover:underline">Home</a><br>
-                            <a href="/jaarboek" class="hover:underline">Jaarboek</a><br>
-                       <a href="/aanmelden" class="hover:underline">Aanmelden</a>
+                            <a href="/aletta-s/index"  class="hover:underline">Home</a><br>
+                            <a href="/aletta-s/jaarboek" class="hover:underline">Jaarboek</a><br>
+                       <a href="/aletta-s/aanmelden" class="hover:underline">Aanmelden</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +47,7 @@
             <span class="text-sm text-black flex flex-wrap justify-center">© <?= date("Y"); ?>&nbsp;<a href="index.php" class="hover:underline">ARYC</a>. All Rights Reserved.
             </span>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                <a href="https://nl.linkedin.com/company/ajsph?trk=public_post_feed-actor-name" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a href="https://nl.linkedin.com/company/ajsph?trk=public_post_feed-actor-name" class="text-gray-500 hover:text-gray-900">
                 <svg fill="#000000" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                     viewBox="0 0 310 310" xml:space="preserve">
                 <g id="XMLID_801_">
