@@ -14,11 +14,9 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Pagina's</h2>
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
-                            <li>
-                            <a href="/index"  class="hover:underline">Home</a>                       
-                            <a href="/jaarboek" class="hover:underline">Jaarboek</a>
-                       
-                            <a href="/aanmelden" class="hover:underline">Aanmelden</a>
+                            <a href="/index"  class="hover:underline">Home</a><br>
+                            <a href="/jaarboek" class="hover:underline">Jaarboek</a><br>
+                       <a href="/aanmelden" class="hover:underline">Aanmelden</a>
                         </li>
                     </ul>
                 </div>
@@ -26,8 +24,8 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Bekijk ons</h2>
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="https://nl.linkedin.com/company/ajsph?trk=public_post_feed-actor-name" class="hover:underline ">Linkedin</a>
-                            <a href="#" class="hover:underline ">Instagram</a>
+                            <a href="https://nl.linkedin.com/company/ajsph?trk=public_post_feed-actor-name" class="hover:underline ">Linkedin</a><br>
+                            <a href="#" class="hover:underline ">Instagram</a><br>
                             <a href="https://www.facebook.com/LifelinesNL/" class="hover:underline">Facebook</a>
                         </li>
                     </ul>
@@ -36,8 +34,8 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Cookies</a>
-                            <a href="#" class="hover:underline">Privacy Policy</a>
+                            <a href="#" class="hover:underline">Cookies</a><br>
+                            <a href="#" class="hover:underline">Privacy Policy</a><br>
                             <a href="#" class="hover:underline">Terms &amp; Conditions</a>
                         </li>
                     </ul>
