@@ -1,2 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.87 294.17"><defs><style>.d{fill:#13acc8;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:7.14px;}.e{fill:#1d1d1b;}</style></defs><g id="a"/><g id="b"><g id="c"><g><path class="d" d="M67.03,123.47c0-21.32-29.21-29.39-29.05-66.64C37.98,27.44,61.79,3.61,91.17,3.57"/>
-<path class="e" d="M91.32,81.05c1.98,0,3.57,.58,4.78,1.75s1.81,2.66,1.81,4.47-.6,3.27-1.81,4.43-2.8,1.75-4.78,1.75-3.53-.58-4.74-1.75-1.81-2.64-1.81-4.43,.6-3.27,1.81-4.45c1.21-1.18,2.79-1.77,4.74-1.77Zm4.88-6.43h-9.76l-1.38-41.03h12.52l-1.38,41.03Z"/></g></g></g></svg>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 295" width="272" height="295">
+	<title>aletta-logo-small-svg</title>
+	<style>
+		.s0 { fill: #13acc8;stroke: #1d1d1b;stroke-width: 7.1 } 
+		.s1 { fill: #1d1d1b } 
+	</style>
+	<g id="a">
+	</g>
+	<g id="b">
+		<g id="c">
+			<g id="Layer">
+				<path id="Layer" class="s0" d="m133.4 286.1c0-49.4-67.8-68.1-67.4-154.6 0-68.1 55.2-123.4 123.4-123.5"/>
+				<path id="Layer" class="s1" d="m189.7 187.7q6.9 0 11.1 4.1 4.2 4.1 4.2 10.4c0 4.2-1.4 7.5-4.2 10.2q-4.2 4.1-11.1 4.1c-4.6 0-8.2-1.4-11-4.1q-4.2-4-4.2-10.2 0-6.3 4.2-10.4 4.2-4.1 11-4.1zm11.4-14.9h-22.7l-3.2-95.2h29.1z"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    require("components/header.php");
+    head("Jaarboek");
+?>
 
 <head>
     <!-- Specifies the character encoding of the document -->
@@ -246,7 +248,7 @@
    <!-- in cijfers section -->
    <section>
       <div class="py-8 px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center my-4">Onze werk in cijfers</h2>
+      <h2 class="text-3xl font-bold text-center my-4">Ons werk in cijfers</h2>
       <div id="container-section-cijfers" class="flex flex-col md:flex-row md:justify-between">
          <!-- in vijf jaar tijd -->
          <div class="flex flex-col m-10 md:ml-3 text-center">
