@@ -9,6 +9,10 @@
     --primary-text-color: #3470ab;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 /* Styling the container element for the overview page */
 #container-overzicht-pagina {
     background-color: var(--container-background-color);

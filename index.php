@@ -21,7 +21,6 @@
                 </div>
             </div>
         </section>
-        <!-- Werk aan de winkel -->
         <section>
             <div class="relative h-[100vh] w-screen overflow-x-hidden -top-32 md:-top-56 flex items-center justify-center">
                 <svg class="absolute w-[200%] fill-secondarycolor h-full -left-3/4" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" fill="">
