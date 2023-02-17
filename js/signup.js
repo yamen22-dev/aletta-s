@@ -1,7 +1,8 @@
 const teamMemberDivs = Array.from(document.querySelectorAll('form > div div.grid-cols-2.mb-2'));
-let tailDiv = teamMemberDivs[3];
+teamMemberDivs.shift();
+let tailDiv = teamMemberDivs[1];
 
-for (let i = 1; i < teamMemberDivs.length; i++) {
+for (let i = 0; i < teamMemberDivs.length; i++) {
     const element = teamMemberDivs[i];
     element.classList.add('hidden');
 }
@@ -22,10 +23,10 @@ button.addEventListener('click', (e) => {
 });
 
 function unhideButton() {
-    const newInput = teamMemberDivs.pop();
+    const newInput = teamMemberDivs.shift();
     newInput.classList.remove('hidden');
 
-    if (teamMemberDivs.length < 2) {
+    if (teamMemberDivs.length < 1) {
         button.remove();
     }
 }
