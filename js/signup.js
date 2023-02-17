@@ -8,7 +8,7 @@ for (let i = 0; i < teamMemberDivs.length; i++) {
 }
 
 const button = document.createElement('button');
-const buttonClasses = ['uppercase', 'text-sm', 'font-bold', 'tracking-wide', 'text-gray-100', 'p-3', 'rounded-lg', 'focus:outline-none', 'focus:shadow-outline', 'bg-secondarycolor'];
+const buttonClasses = ['uppercase', 'text-sm', 'font-bold', 'tracking-wide', 'text-gray-100', 'p-3', 'rounded-lg', 'focus:outline-none', 'focus:shadow-outline', 'bg-primarycolor'];
 button.innerHTML = "+ teamlid";
 
 buttonClasses.forEach(cssClass => {
