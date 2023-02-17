@@ -34,9 +34,9 @@
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                 <ul class="text-gray-600 dark:text-gray-400">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Cookies</a><br>
-                        <a href="#" class="hover:underline">Privacy Policy</a><br>
-                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                        <a href="index.php" class="hover:underline">Cookies</a><br>
+                        <a href="index.php" class="hover:underline">Privacy Policy</a><br>
+                        <a href="index.php" class="hover:underline">Terms &amp; Conditions</a>
                     </li>
                 </ul>
             </div>
