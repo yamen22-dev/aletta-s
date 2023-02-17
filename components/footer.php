@@ -14,9 +14,9 @@
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Pagina's</h2>
                 <ul class="text-gray-600 dark:text-gray-400">
                     <li class="mb-4">
-                        <a href="/index" class="hover:underline">Home</a><br>
-                        <a href="/jaarboek" class="hover:underline">Jaarboek</a><br>
-                        <a href="/aanmelden" class="hover:underline">Aanmelden</a>
+                        <a href="index.php" class="hover:underline">Home</a><br>
+                        <a href="jaarboek.php" class="hover:underline">Jaarboek</a><br>
+                        <a href="signup.php" class="hover:underline">Aanmelden</a>
                     </li>
                 </ul>
             </div>
